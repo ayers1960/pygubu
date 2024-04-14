@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="tk.Toplevel" id="toplevel1">
+    <property name="height">200</property>
+    <property name="resizable">none</property>
+    <property name="width">200</property>
+    <child>
+      <object class="ttk.Frame" id="frame_main" named="True">
+        <property name="height">200</property>
+        <property name="padding">5</property>
+        <property name="width">200</property>
+        <layout manager="pack">
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="label1">
+            <property name="text" translatable="yes">What is my favorite programing Language?</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry1">
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="pady">5</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="frame_buttons" named="True">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">2</property>
+            </layout>
+            <child>
+              <object class="ttk.Button" id="SubmitAnswer" named="True">
+                <property name="command" type="command" cbtype="simple">onSubmitAnswerClicked</property>
+                <property name="text" translatable="yes">SubmitAnswer</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="pady">10</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
